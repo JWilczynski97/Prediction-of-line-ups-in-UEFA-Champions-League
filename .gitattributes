@@ -4,3 +4,9 @@
 *.txl linguist-detectable=false
 *.txp linguist-detectable=false
 *.sql linguist-detectable=false
+*.html linguist-documentation=false
+*.csv linguist-documentation=false
+*.txt linguist-documentation=false
+*.txl linguist-documentation=false
+*.txp linguist-documentation=false
+*.sql linguist-documentation=false
