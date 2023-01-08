@@ -4,7 +4,7 @@
 
 ## About the project
 
-The purpose of this project was analysing a machine learning use to predict of managerial decisions in football. With the use of public available data and machine learning algorithms I determined percentage chance of performance in starting squad for (almost) every player in UEFA Champions League for the years 2010-2020. The most of needed data was downloaded from WhoScored.com, one of the most popular football websites.
+The purpose of this project was analyze of a machine learning use to predict of managerial decisions in football. With the use of public available data and machine learning algorithms I determined percentage chance of performance in starting squad for (almost) every player in UEFA Champions League for the years 2010-2020. The most of needed data was downloaded from WhoScored.com, one of the most popular football websites.
 
 The project consisted of several mains stages (more information about each one may be found in the code and comments):
 1. Downloading all necessary websites from WhoScored.com (and other) with the use of Python programming language and Selenium Webdriver.
@@ -25,7 +25,7 @@ The project consisted of several mains stages (more information about each one m
 * [scikit-learn 0.24.2](https://scikit-learn.org/stable/index.html)
 
 ## Source Data
-The project used historical data available on the Internet. The data about matches played in the UEFA Champions League and european leagues (predicted squads and players stats) was downloaded from <i> WhoScored.com </i>. Moreover, tha historical data about the tables in european leagues come from websites <i> footstats.co.uk </i> and <i> worldfootball.net </i>. HTML code of the websites was downloaded and saved in html files on the local disk ith the use of Selenium Webdriver. In the next steps these files was analysied wit Beautiful Soup library to get the necessery data and insert them into a SQLite database. In the repository there are example downloaded html files (in the directories Matches and League_tables).
+The project used historical data available on the Internet. The data about matches played in the UEFA Champions League and european leagues (predicted squads and players stats) was downloaded from <i> WhoScored.com </i>. Moreover, tha historical data about the tables in european leagues come from websites <i> footstats.co.uk </i> and <i> worldfootball.net </i>. HTML code of the websites was downloaded and saved as html files on the local disk with the use of Selenium Webdriver. In the next steps these files was analysied wit Beautiful Soup library to get the necessery data and insert them into a SQLite database. In the repository there are example downloaded html files (in the directories Matches and League_tables).
 
 ## Machine Learning Dataset
 
@@ -67,7 +67,7 @@ WhoScored.com predictions |0.506
 
 The smaller the value of the function Log Loss, the better the effectiveness of algorithm. 
 According to the results, the most effective machine learning algorithm to predict the probability of performances for football players is random forrest. 
-Moreover, this method  reached better score than WhoScored.com predictions.
+Moreover, this method reached better score than WhoScored.com predictions.
 
 After the indication of the most effective machine learning algorithm, the feature importance of used attributes was analysed. For this purposeI used three solutions: Gini impurity, permutation feature importance and SHapley Additive exPlanations. The result chart for [SHAP](https://shap.readthedocs.io/en/latest/index.html#) is shown below. According to the results, the most important features for the machine learning algotihm were the prediction of WhoScored.com experts and the percentage of played minutes of the footballer in a season.
 
